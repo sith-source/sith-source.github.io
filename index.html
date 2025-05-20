@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>sith-source - Work in Progress</title>
+  <title>sith-source</title>
   <style>
     :root {
       --bg-color: #1e1e2f;
@@ -27,25 +27,23 @@
       color: var(--text-color);
     }
 
-    .main {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding-top: 40px;
-    }
-
     .wip {
       background-color: #3a3a5a;
       color: var(--highlight-color);
-      margin-bottom: 2rem;
       padding: 1rem;
       border-left: 5px solid var(--highlight-color);
       border-radius: 4px;
       font-weight: bold;
       text-align: center;
       max-width: 600px;
+      margin: 40px auto 20px auto;
+    }
+
+    .main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .traffic-light {
@@ -98,11 +96,11 @@
 </head>
 <body>
 
-  <div class="main">
-    <div class="wip">
-      🚧 This page is a work in progress — more updates coming soon!
-    </div>
+  <div class="wip">
+    🚧 This page is a work in progress — more updates coming soon!
+  </div>
 
+  <div class="main">
     <div class="traffic-light">
       <div class="light red" title="Stop"></div>
       <div class="light yellow" title="Wait"></div>
